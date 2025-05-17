@@ -19,7 +19,7 @@ void setup() {
   lcd.begin(16, 2);
   lcd.backlight();
   lcd.clear();
-  lcd.print("Welcome Everyone!");
+  lcd.print("Welcome!!!!!");
 
   finger.begin(57600);
   if (!finger.verifyPassword()) {
@@ -69,7 +69,7 @@ void loop() {
   if (cmd == "ENROL_OFF") {
     inEnrollMode = false;
     lcd.clear();
-    lcd.print("Welcome Everyone!");
+    lcd.print("Welcome!!!!!");
     return;
   }
 
@@ -116,7 +116,7 @@ void loop() {
       // back to idle
       inEnrollMode = false;
       lcd.clear();
-      lcd.print("Welcome Everyone!");
+      lcd.print("Welcome!!!!!");
       return;
     }
 
@@ -136,7 +136,7 @@ void loop() {
       }
       delay(2000);
       lcd.clear();
-      lcd.print("Welcome!");
+      lcd.print("Welcome!!!!!");
       return;
     }
   }
